@@ -8,7 +8,7 @@
     background-color: #450DA0;
     color: white;
     border-radius: 5px;
-    padding: 3px;
+    padding: 2px 8px 2px 8px;
 }
 
 .btn2 {
@@ -35,11 +35,21 @@
     margin-right: 15%;
 }
 
+.busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 20%;
+}
+
 
 .header_nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    width: 71%;
+    margin-left: 15%;
 }
 
 .promos {
@@ -61,6 +71,8 @@
     margin: 1%;
     width: 100%;
     height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
     gap: 2%;
 }
 
@@ -74,4 +86,221 @@
     background: linear-gradient(to right, #450da0, #0D021F);
     width: 40%;
     height: 100%;
+}
+
+.masVendido {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.masVendido_titulo {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    padding: 1%;
+}
+
+.masTitulo {
+    background-color: #450DA0;
+    font-size: 1.25rem;
+    padding: 7px 15px 5px 7px;
+    border-radius: 0 25px 5px 0;
+    color: white;
+}
+
+.masTitulillo {
+    color: #450DA0;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    max-width: 81%;
+}
+
+.carrusel_prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.carrusel_prod img {
+    width: 200px;
+    /* Ancho deseado */
+    height: 200px;
+    /* Altura deseada */
+}
+
+.carrusel_ofer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.carrusel_sin_ofer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+}
+
+
+.carrusel_nom_prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carrusel_nom_prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.porcentaje {
+    background-color: rgb(203, 254, 3);
+    border-radius: 50%;
+    border: solid 1px;
+    padding: 10px;
+}
+
+.carrusel_flechas {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+footer {
+    background-color: #d6c8f8;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #000;
+    font-family: Arial, sans-serif;
+    border-top: solid 10px rgb(69, 13, 160);
+    margin-top: 5%;
+}
+
+.foot_izq {
+    flex: 1;
+    max-width: 25%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss {
+    text-align: center;
+}
+
+.rrss_group {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+    /* justify-content: center; */
+}
+
+.rrss_group img {
+    width: 40px;
+    height: 40px;
+}
+
+.foot_text {
+    flex: 2;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_text_column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.foot_text_column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #450da0;
+    margin-bottom: 10px;
+}
+
+.foot_text_column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot_text_column ul li {
+    margin-bottom: 8px;
+}
+
+.foot_text_column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.foot_text_column ul li a:hover {
+    color: #605DEE;
+}
+
+.foot_dere {
+    flex: 1;
+    max-width: 25%;
+    text-align: left;
+}
+
+.foot_dere .pago,
+.foot_dere .descargar {
+    margin-bottom: 20px;
+}
+
+.foot_dere h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #450da0;
+    margin-bottom: 10px;
+}
+
+.foot_dere img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
+.pago {
+    text-align: start;
+    margin-top: 20px;
+}
+
+.pago h3 {
+    font-size: 16px;
+    color: #450da0; /* Morado oscuro */
+    margin-bottom: 15px;
+}
+
+.pago img {
+    width: 50px; /* Ancho uniforme */
+    height: auto; /* Proporción automática */
+    margin: 10px; /* Espaciado entre imágenes */
+}
+
+.pago img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
