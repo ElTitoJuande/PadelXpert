@@ -52,6 +52,11 @@
     margin-left: 15%;
 }
 
+.header_nav a{
+    color:black;
+    text-decoration: none;
+}
+
 #promos {
     display: flex;
     flex-direction: column;
@@ -112,6 +117,7 @@
 
 .masTitulillo {
     color: #450DA0;
+    text-decoration: none;
 }
 
 .carrusel {
