@@ -2,6 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+body {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul li,
+a {
+    font-size: 1.2rem;
+}
+
+ul li {
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 .btn1 {
@@ -43,7 +61,6 @@
     max-width: 20%;
 }
 
-
 .header_nav {
     display: flex;
     justify-content: space-between;
@@ -52,8 +69,8 @@
     margin-left: 15%;
 }
 
-.header_nav a{
-    color:black;
+.header_nav a {
+    color: black;
     text-decoration: none;
 }
 
@@ -296,19 +313,24 @@ footer {
 
 .pago h3 {
     font-size: 16px;
-    color: #450da0; /* Morado oscuro */
+    color: #450da0;
     margin-bottom: 15px;
 }
 
 .pago img {
-    width: 50px; /* Ancho uniforme */
-    height: auto; /* Proporción automática */
-    margin: 10px; /* Espaciado entre imágenes */
+    width: 20%;
+    height: auto;
+    margin: 10px;
 }
 
 .pago img:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.descargar img {
+    width: 40%;
+    margin-right: 30px;
 }
 
 #promosPalas {
@@ -321,4 +343,264 @@ footer {
 
 .promoPalas {
     background: linear-gradient(to right, #450da0, #0D021F);
+}
+
+.filtros {
+    margin-top: 5%;
+}
+
+.filtro_s {
+    margin: 0px 0px 20px 85px;
+    max-width: 200px;
+    background-color: #bfbef8;
+    border-radius: 5px
+}
+
+.filtro_s h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 70px 5px 15px;
+}
+
+.filtro {
+    margin: 0px 0px 20px 85px;
+    max-width: 200px;
+    background-color: #bfbef8;
+    border-radius: 5px;
+    position: relative;
+}
+
+.filtro select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px 40px 10px 25px;
+    width: 100%;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.filtro::after {
+    content: '';
+    position: absolute;
+    top: 23%;
+    right: 10px;
+    transform: translateY(-0%);
+    width: 25px;
+    height: 22px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"%3E%3Cpath d="M7 10l5 5 5-5H7z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.mas_vendido {
+    margin-top: 30px;
+}
+
+.productos_destacados {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos_destacados h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #450da0;
+    text-align: center;
+}
+
+.lista_productos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto:last-child {
+    border-bottom: none;
+}
+
+.producto img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.detalle_producto {
+    flex: 1;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.precio {
+    font-size: 1rem;
+    color: #333;
+}
+
+.precio_original {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* Tengo que cambiarlo enterito */
+@media (max-width: 600px) {
+    .producto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .producto img {
+        margin-bottom: 10px;
+    }
+
+    .nombre {
+        font-size: 1.1rem;
+    }
+
+    .precio {
+        font-size: 0.95rem;
+    }
+}
+#galeriaPalas{
+    display: flex;
+
+}
+#galeriaDer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+    gap: 20px;
+}
+
+.producto_galeria {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto_galeria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.producto_galeria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto_galeria h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.precio {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.precio .precio_original {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn_carrito {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #8eff00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn_carrito:hover {
+    background-color: #6cd900;
+}
+
+.favorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.favorito:hover {
+    color: #ff6666;
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #c5ff00;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.paginacion span {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.paginacion span:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
 }
