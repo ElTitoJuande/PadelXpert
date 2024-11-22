@@ -7,13 +7,7 @@
 }
 
 body {
-    text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
-}
-
-ul li,
-a {
-    font-size: 1.2rem;
 }
 
 ul li {
@@ -60,6 +54,7 @@ ul li {
     width: 100%;
     max-width: 20%;
 }
+
 
 .header_nav {
     display: flex;
@@ -201,20 +196,19 @@ ul li {
 .carrusel_flechas {
     display: flex;
     justify-content: flex-start;
-    width: 80%;
+    width: 70%;
+    margin: 2%;
 }
 
 footer {
     background-color: #d6c8f8;
-    padding: 30px 40px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     color: #000;
-    font-family: Arial, sans-serif;
     border-top: solid 10px rgb(69, 13, 160);
-    margin-top: 5%;
 }
 
 .foot_izq {
@@ -235,7 +229,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-gap: 10px;
-    /* justify-content: center; */
 }
 
 .rrss_group img {
@@ -256,7 +249,7 @@ footer {
 }
 
 .foot_text_column h3 {
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #450da0;
     margin-bottom: 10px;
@@ -274,7 +267,7 @@ footer {
 .foot_text_column ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 1.25rem;
     transition: color 0.3s ease;
 }
 
@@ -291,10 +284,11 @@ footer {
 .foot_dere .pago,
 .foot_dere .descargar {
     margin-bottom: 20px;
+    margin-right: 40px;
 }
 
 .foot_dere h3 {
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #450da0;
     margin-bottom: 10px;
@@ -312,7 +306,7 @@ footer {
 }
 
 .pago h3 {
-    font-size: 16px;
+    font-size: 1.5rem;
     color: #450da0;
     margin-bottom: 15px;
 }
@@ -350,22 +344,23 @@ footer {
 }
 
 .filtro_s {
-    margin: 0px 0px 20px 85px;
-    max-width: 200px;
+    margin: 0px 0px 15px 50px;
+    max-width: 115px;
     background-color: #bfbef8;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .filtro_s h2 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     gap: 5px;
-    padding: 5px 70px 5px 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 0px 20px 0px 5px;
 }
 
 .filtro {
-    margin: 0px 0px 20px 85px;
+    margin: 0px 0px 20px 50px;
     max-width: 200px;
     background-color: #bfbef8;
     border-radius: 5px;
@@ -378,8 +373,8 @@ footer {
     border: none;
     padding: 10px 40px 10px 25px;
     width: 100%;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
 
@@ -403,10 +398,10 @@ footer {
 
 .productos_destacados {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
+    margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 39%);
 }
 
 .productos_destacados h2 {
@@ -483,10 +478,12 @@ footer {
         font-size: 0.95rem;
     }
 }
-#galeriaPalas{
+
+#galeriaPalas {
     display: flex;
 
 }
+
 #galeriaDer {
     display: flex;
     flex-direction: column;
@@ -498,7 +495,7 @@ footer {
 .productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
-    gap: 20px;
+    gap: 35px;
 }
 
 .producto_galeria {
@@ -548,7 +545,7 @@ footer {
 .btn_carrito {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #8eff00;
+    background-color: #ccff00;
     color: #000;
     font-weight: bold;
     border: none;
@@ -559,7 +556,7 @@ footer {
 }
 
 .btn_carrito:hover {
-    background-color: #6cd900;
+    background-color: #7df506;
 }
 
 .favorito {
@@ -582,17 +579,25 @@ footer {
     background-color: #c5ff00;
     color: #000;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px 10px 10px 8px;
+    border-radius: 72px;
     font-size: 14px;
 }
 
 .paginacion {
+    margin: 45px 20px 45px 20px;
+    padding: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     gap: 10px;
     font-size: 16px;
     color: #555;
+}
+
+.paginacion div {
+    background-color: #d6c8f857;
+    border: none;
+    border-radius: 10px;
 }
 
 .paginacion span {
@@ -601,6 +606,73 @@ footer {
 }
 
 .paginacion span:hover {
-    background-color: #e0e0e0;
+    background-color: rgb(69, 13, 160);
+    color: white;
     border-radius: 5px;
+}
+
+#palas2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px rgb(69, 13, 160);
+    background-color: #bfbef83b;
+}
+
+.palas2024_text {
+    width: 50%;
+    margin: 1%;
+}
+
+.palas2024_text h2 {
+    font-size: 4rem;
+}
+
+.palas2024_text h3 {
+    font-size: 2.5rem;
+}
+
+.palas2024_text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.palas2024_foto {
+    margin: 1%;
+}
+
+#promosPaleteros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.promoPaleteros {
+    background: linear-gradient(to right, #450da0, #0D021F);
+}
+
+.buscador {
+    padding: 5px 40px 5px 10px;
+    border: solid 10px;
+    border-radius: 15px;
+    border-color: #BFBEF8;
+}
+
+.busqueda2 {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px 30px 0px;
+}
+.orden{
+    max-width: 115px;
+    background-color: #bfbef8;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 23px 3px 5px;
 }
