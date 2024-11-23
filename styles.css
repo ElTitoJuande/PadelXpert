@@ -25,8 +25,16 @@ ul li {
 
 .btn2 {
     background-color: #450DA0;
-    border-radius: 25%;
+    border-radius: 25px;
+    padding: 2px 8px 2px 8px;
     color: white;
+}
+
+.btn2:hover {
+    box-shadow: inset 0 0 0 2px #450DA0;
+    border-color: #450DA0;
+    background-color: white;
+    color: #450DA0;
 }
 
 .header_top {
@@ -60,12 +68,15 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 71%;
+    width: 70%;
+    font-size: 1.5rem;
     margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px 0px 0px 0px;
 }
 
 .header_nav a {
-    color: black;
+    /* color: #000; */
     text-decoration: none;
 }
 
@@ -134,7 +145,8 @@ ul li {
 
 .carrusel {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
     align-items: center;
     padding: 1%;
     max-width: 81%;
@@ -595,7 +607,7 @@ footer {
 }
 
 .paginacion div {
-    background-color: #d6c8f857;
+    background-color: #d6c8f8;
     border: none;
     border-radius: 10px;
 }
@@ -643,7 +655,7 @@ footer {
     margin: 1%;
 }
 
-#promosPaleteros {
+#promos_Paleteros {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -651,28 +663,110 @@ footer {
     margin: 1%;
 }
 
-.promoPaleteros {
+.promo_Paleteros {
     background: linear-gradient(to right, #450da0, #0D021F);
 }
 
 .buscador {
-    padding: 5px 40px 5px 10px;
+    padding: 5px 80px 5px 10px;
     border: solid 10px;
+    font-size: 1rem;
     border-radius: 15px;
     border-color: #BFBEF8;
 }
 
 .busqueda2 {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 10px 0px 30px 0px;
 }
-.orden{
-    max-width: 115px;
+
+.orden {
+    width: 175px;
     background-color: #bfbef8;
     border-radius: 5px;
     border: none;
+    font-size: 1rem;
     padding: 3px 23px 3px 5px;
+}
+
+.paleteros_busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0ff;
+}
+
+.paleteros_marca {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 80%;
+    margin-left: 10%;
+    gap: 30px;
+    background-color: white;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product_info {
+    background-color: #ccff00;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.product_info span {margin: auto;
+    font-weight: bold;
+    align-items: center;
+    /* justify-content: center; */
+    display: flex
+;
+}
+
+.product_info button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+}
+.slider img{
+    width: 100%;
+}
+
+.slide {
+    min-width: 100vw;
+    height: 70vh;
+    scroll-snap-align: start;
+}
+
+/* MARCAS */
+#marcas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
 }
