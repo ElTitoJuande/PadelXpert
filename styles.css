@@ -56,18 +56,23 @@ ul li {
 }
 
 .logo a {
-    display: block; /* Hace que el enlace cubra toda la imagen */
-    text-decoration: none; /* Elimina subrayados del texto del enlace */
+    display: block;
+    /* Hace que el enlace cubra toda la imagen */
+    text-decoration: none;
+    /* Elimina subrayados del texto del enlace */
 }
 
 .logo img {
-    width: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
-    height: auto; /* Mantiene las proporciones de la imagen */
+    width: 100%;
+    /* Asegura que la imagen se ajuste al tamaño del contenedor */
+    height: auto;
+    /* Mantiene las proporciones de la imagen */
 }
 
 .logo {
     position: relative;
-    z-index: 1; /* Asegura que esté por encima de otros elementos si es necesario */
+    z-index: 1;
+    /* Asegura que esté por encima de otros elementos si es necesario */
 }
 
 .busqueda {
@@ -910,4 +915,27 @@ footer {
 
 .marcas2024_foto img {
     width: 100%;
+}
+
+.promoBullpadel {
+    position: relative;
+    /* Establecemos un contenedor con posición relativa */
+}
+
+.promoBullpadel1 {
+    width: 100%;
+    /* O el tamaño que prefieras para la imagen de fondo */
+    height: auto;
+}
+
+.promoBullpadel2 {
+    position: absolute;
+    bottom: -50px;
+    background: border-box;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
