@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(0deg, #d6c8f8, #ffffff);
 }
 
 ul li {
@@ -55,25 +56,23 @@ ul li {
     margin-right: 15%;
 }
 
+.logo {
+    position: relative;
+    z-index: 1;
+    max-width: 15%;
+    margin: 1% 1% 1% 1%;
+}
+
 .logo a {
     display: block;
-    /* Hace que el enlace cubra toda la imagen */
     text-decoration: none;
-    /* Elimina subrayados del texto del enlace */
 }
 
 .logo img {
     width: 100%;
-    /* Asegura que la imagen se ajuste al tamaño del contenedor */
     height: auto;
-    /* Mantiene las proporciones de la imagen */
 }
 
-.logo {
-    position: relative;
-    z-index: 1;
-    /* Asegura que esté por encima de otros elementos si es necesario */
-}
 
 .busqueda {
     display: flex;
@@ -109,30 +108,44 @@ ul li {
 
 .promo1 {
     background: linear-gradient(to right, #450da0, #0D021F);
+    width: 82%;
+    margin: 0% 10% 0% 10%;
 }
+
+.promo1_text img {
+    width: 100%;
+}
+
+/* eeeeeeee */
 
 .promo2_3 {
     align-items: center;
     display: flex;
-    justify-content: center;
-    margin: 1%;
-    width: 80%;
+    justify-content: space-evenly;
+    margin: 1% 0% 0% 0%;
+    width: 82%;
     height: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
     gap: 2%;
 }
 
 .promo2 {
     background: linear-gradient(to right, #450da0, #0D021F);
-    width: 40%;
+    width: 100%;
     height: 100%;
+}
+
+.promo2 img {
+    width: 100%;
 }
 
 .promo3 {
     background: linear-gradient(to right, #450da0, #0D021F);
-    width: 40%;
+    width: 100%;
     height: 100%;
+}
+
+.promo3 img {
+    width: 100%;
 }
 
 #masVendido {
@@ -368,6 +381,12 @@ footer {
 
 .promoPalas {
     background: linear-gradient(to right, #450da0, #0D021F);
+    width: 82%;
+    margin: 0% 10% 0% 10%;
+}
+
+.promoPalas img {
+    width: 100%;
 }
 
 .filtros {
@@ -527,6 +546,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
     gap: 35px;
+    margin: 2% 2% 0% 2%;
 }
 
 .producto_galeria {
@@ -627,7 +647,7 @@ footer {
 
 .paginacion div {
     background-color: #d6c8f8;
-    border: none;
+    border: solid 2px rgb(69, 13, 160);
     border-radius: 10px;
 }
 
@@ -646,8 +666,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid 2px rgb(69, 13, 160);
-    background-color: #bfbef83b;
+    border-top: solid 3px rgb(69, 13, 160);
+    background-color: rgb(69, 13, 160, 0.2);
 }
 
 .palas2024_text {
@@ -684,6 +704,12 @@ footer {
 
 .promo_Paleteros {
     background: linear-gradient(to right, #450da0, #0D021F);
+    width: 82%;
+    margin: 0% 10% 0% 10%;
+}
+
+.promo_Paleteros img {
+    width: 100%;
 }
 
 .buscador {
@@ -707,7 +733,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 10px 0px 30px 0px;
+    margin: 2% 0% 5% 0%
 }
 
 .orden {
@@ -736,18 +762,21 @@ footer {
     max-height: 15vw;
     margin-left: 10%;
     gap: 30px;
-    background-color: white;
 }
 
 .product {
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .product img {
     width: 100%;
     height: auto;
+    min-width: 200px;
     display: block;
     margin: 0 auto;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .product_info {
@@ -764,7 +793,6 @@ footer {
     margin: auto;
     font-weight: bold;
     align-items: center;
-    /* justify-content: center; */
     display: flex;
 }
 
@@ -784,7 +812,7 @@ footer {
 
 .slider_contenedor {
     border: solid 3px #605DEE;
-    margin: 2% 10% 2% 10%;
+    margin: 10% 10% 2% 10%;
     border-radius: 10%;
     background-color: #5f5dee59;
     overflow: hidden;
@@ -825,12 +853,17 @@ footer {
     margin: 1%;
 }
 
+.marcas_header img {
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+}
+
 .marcas_grid {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin: 1%;
+    margin: 0% 0% 2% 0%;
 }
 
 .video_background iframe {
@@ -885,8 +918,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid 2px rgb(69, 13, 160);
-    background-color: #bfbef83b;
+    border-top: solid 5px rgb(69, 13, 160);
+    background-color: rgb(69, 13, 160, 0.2);
 }
 
 .marcas2024_text {
@@ -917,14 +950,16 @@ footer {
     width: 100%;
 }
 
+#bullpadelPromo {
+    margin: 2% 15% 0% 15%;
+}
+
 .promoBullpadel {
     position: relative;
-    /* Establecemos un contenedor con posición relativa */
 }
 
 .promoBullpadel1 {
     width: 100%;
-    /* O el tamaño que prefieras para la imagen de fondo */
     height: auto;
 }
 
@@ -938,4 +973,63 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+}
+
+.bullpadel_text {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10% 5% 10% 5%;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.bullpadel_text p {
+    text-align: center;
+}
+
+#bullpadel_products {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+    min-height: 50vh;
+    max-height: 25vw;
+    margin-bottom: 5%;
+}
+.bull_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.player {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.bull_container h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bull_container p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
