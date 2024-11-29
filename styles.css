@@ -1079,6 +1079,7 @@ footer>div {
     .precio {
         font-size: 0.95rem;
     }
+
     .foot_izq>div:nth-child(2) {
         display: flex;
         justify-content: space-between;
@@ -1169,12 +1170,9 @@ footer>div {
         color: #fff;
         cursor: pointer;
     }
-    
-
 }
 
 @media (max-width:1080px) {
-    .pago {}
 
     .pago img {
         width: 25%;
@@ -1201,7 +1199,6 @@ footer>div {
 
     /* .pago img{
         width: 37%;
-        
     } */
 }
 
