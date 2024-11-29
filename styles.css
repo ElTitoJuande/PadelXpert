@@ -190,7 +190,7 @@ ul li {
     width: 100%;
     align-items: center;
     padding: 1%;
-    max-width: 81%;
+    max-width: 85%;
 }
 
 .carrusel_prod:hover {
@@ -287,7 +287,7 @@ footer>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 5px;
     margin: 1%;
 }
 
@@ -296,7 +296,8 @@ footer>div {
 }
 
 .rrss {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .rrss_group {
@@ -375,7 +376,7 @@ footer>div {
 }
 
 .opinion img {
-    width: 100%;
+    width: 80%;
 }
 
 .pago {
@@ -774,7 +775,7 @@ footer>div {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    width: 80%;
+    width: 83%;
     margin-left: 10%;
     gap: 30px;
 }
@@ -1059,7 +1060,8 @@ footer>div {
     color: rgb(67, 67, 67);
 }
 
-/* Tengo que cambiarlo enterito */
+/* MEDIA QUERYS */
+
 @media (max-width: 600px) {
     .producto {
         flex-direction: column;
@@ -1077,6 +1079,36 @@ footer>div {
     .precio {
         font-size: 0.95rem;
     }
+    .foot_izq>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 5% 0% 5%;
+
+    }
+}
+
+@media (max-width:688px) {
+    .foot_izq>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .foot_izq img {
+        margin: 2%;
+        width: 80%;
+    }
+
+    .opinion img {
+        width: 100%;
+    }
+
+    .rrss {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -1105,6 +1137,12 @@ footer>div {
     .bullpadel_text {
         font-size: 2rem;
     }
+
+    .foot_izq>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 5% 0% 5%;
+    }
 }
 
 .marcas2024_foto {
@@ -1131,6 +1169,7 @@ footer>div {
         color: #fff;
         cursor: pointer;
     }
+    
 
 }
 
@@ -1138,12 +1177,12 @@ footer>div {
     .pago {}
 
     .pago img {
-        width: 37%;
+        width: 25%;
 
     }
 
     .descargar img {
-        width: 80%;
+        width: 50%;
     }
 
 }
@@ -1164,4 +1203,23 @@ footer>div {
         width: 37%;
         
     } */
+}
+
+@media (max-width:1238px) {
+    .foot_izq {
+        flex: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        margin: 0% 10% 0% 10%;
+    }
+
+    .foot_dere {
+        text-align: left;
+        display: flex;
+        margin-left: 10%;
+    }
+
 }
